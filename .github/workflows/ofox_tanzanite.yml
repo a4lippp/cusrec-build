@@ -22,8 +22,8 @@ jobs:
         USER_NAME: eraselk
         USER_EMAIL: eraselk@proton.me
         FOX_SYNC_BRANCH: 12.1
-        DEVICE_TREE: https://github.com/linastorvaldz/device_xiaomi_tanzanite_recovery
-        DEVICE_TREE_BRANCH: fox_12.1
+        DEVICE_TREE: https://github.com/DVWorkspaces/device_xiaomi_tanzanite_recovery
+        DEVICE_TREE_BRANCH: temp
         DEVICE_PATH: device/xiaomi/tanzanite
         DEVICE_NAME: tanzanite
         BUILD_TARGET: vendorboot
