@@ -1,4 +1,4 @@
-name: Build OFRP [tanzanite]
+name: Build TWRP [tanzanite]
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
 jobs:
   build:
 
-    name: 🦊 Build OrangeFox Recovery
+    name: Build TWRP Recovery
     runs-on: ubuntu-latest
 
     steps:
@@ -17,13 +17,13 @@ jobs:
       run: env
 
     - name: Build
-      uses: linastorvaldz/orangefox-builder-action@master
+      uses: imnathanzero/cusrec-builder-action@master
       with:
         USER_NAME: imnathanzero
         USER_EMAIL: nathannxx@proton.me
-        FOX_SYNC_BRANCH: 12.1
-        DEVICE_TREE: https://github.com/DVWorkspaces/device_xiaomi_tanzanite_recovery
-        DEVICE_TREE_BRANCH: fox_12.1-temp
+        TWRP_SYNC_BRANCH: 12.1
+        DEVICE_TREE: https://github.com/Mayuri-Chan/recovery_device_xiaomi_tanzanite
+        DEVICE_TREE_BRANCH: 12.1
         DEVICE_PATH: device/xiaomi/tanzanite
         DEVICE_NAME: tanzanite
         BUILD_TARGET: vendorboot
