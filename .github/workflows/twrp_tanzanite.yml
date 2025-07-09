@@ -1,4 +1,4 @@
-name: Build OFRP [tanzanite][A14]
+name: Build OFRP
 
 on:
   workflow_dispatch:
@@ -20,11 +20,11 @@ jobs:
       uses: linastorvaldz/orangefox-builder-action@master
       with:
         FOX_SYNC_BRANCH: 12.1
-        DEVICE_TREE: https://github.com/DVWorkspaces/device_xiaomi_tanzanite_recovery
-        DEVICE_TREE_BRANCH: fox_12.1
-        DEVICE_PATH: device/xiaomi/tanzanite
-        DEVICE_NAME: tanzanite
-        BUILD_TARGET: vendorboot
+        DEVICE_TREE: https://github.com/imnathanzero/android_device_samsung_a14.git
+        DEVICE_TREE_BRANCH: android-12.1
+        DEVICE_PATH: device/samsung/a14
+        DEVICE_NAME: a14
+        BUILD_TARGET: recovery
         TG_CHAT_ID: ${{ secrets.CHAT_ID }}
         TG_TOKEN: ${{ secrets.TG_TOKEN }}
       env:
