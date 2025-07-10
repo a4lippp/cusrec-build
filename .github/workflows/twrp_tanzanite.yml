@@ -20,10 +20,10 @@ jobs:
       uses: linastorvaldz/orangefox-builder-action@master
       with:
         FOX_SYNC_BRANCH: 12.1
-        DEVICE_TREE: https://github.com/a4lippp/android_device_samsung_a14_recovery.git
+        DEVICE_TREE: https://github.com/a4lippp/android_recovery_samsung_m15x.git
         DEVICE_TREE_BRANCH: android-12.1
-        DEVICE_PATH: device/samsung/a14
-        DEVICE_NAME: a14
+        DEVICE_PATH: device/samsung/m15x
+        DEVICE_NAME: m15x
         BUILD_TARGET: recovery
         TG_CHAT_ID: ${{ secrets.CHAT_ID }}
         TG_TOKEN: ${{ secrets.TG_TOKEN }}
